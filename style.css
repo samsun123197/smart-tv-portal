@@ -1,60 +1,26 @@
-/* Yeni eklenecek kısım */
+/* style.css içindeki 'main' bloğunu bu şekilde güncelleyin */
+main {
+    flex-grow: 1;
+    display: flex; /* Dikeyde ortalamak için flex kullanabiliriz */
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    padding-bottom: 20px;
+}
+
+/* Mevcut .content-box ve .full-width sınıflarını koruyun */
+.content-box {
+    background-color: #34495e;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 90%; /* Kutunun ekranı çok fazla kaplamasını engelle */
+    width: 100%; /* İçeriğin genişliğe yayılmasını sağla */
+}
 
 .full-width {
-    grid-column: 1 / -1; /* Izgarada tüm genişliği kapla */
+    /* Bu artık grid için değil, genel genişlik için kullanılacak */
+    /* Zaten %100 genişlik ve max-width tanımlı olduğu için bu kısım isteğe bağlıdır */
 }
 
-.table-container {
-    overflow-x: auto; /* Yatay kaydırma çubuğu gerekiyorsa */
-    margin-top: 15px;
-    background-color: #2c3e50; /* Tablo arka planı */
-    border-radius: 8px;
-    padding: 15px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse; /* Hücre kenarlıklarını birleştir */
-    margin: 0 auto; /* Tabloyu ortala */
-    font-size: 1.1em; /* Tablo metinleri için font boyutu */
-    color: #ecf0f1; /* Metin rengi */
-}
-
-th, td {
-    border: 1px solid #4a6c8e; /* Hücre kenarlıkları */
-    padding: 15px; /* İç boşluk */
-    text-align: center; /* Metni ortaya hizala */
-    white-space: nowrap; /* Hücre içeriğinin tek satırda kalmasını sağla */
-}
-
-thead {
-    background-color: #2980b9; /* Başlık arka planı */
-    color: white;
-}
-
-thead th {
-    font-weight: bold;
-    font-size: 1.3em; /* Başlık font boyutu */
-    padding: 20px 15px;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #34495e; /* Çift satırlar için farklı arka plan */
-}
-
-tbody tr:hover {
-    background-color: #4a6c8e; /* Üzerine gelindiğinde renk değişimi */
-    cursor: pointer; /* İşaretçiyi el şekline çevir */
-}
-
-tfoot {
-    background-color: #2c3e50; /* Alt bilgi arka planı */
-    color: #ecf0f1;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-tfoot td {
-    border-top: 2px solid #2980b9; /* Alt çizgi */
-    padding: 20px 15px;
-}
+/* Tabloya özgü stiller (table, th, td vb.) aynen kalmalı */
+/* ... */
